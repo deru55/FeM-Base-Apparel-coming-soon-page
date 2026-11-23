@@ -9,8 +9,48 @@
   </head>
   <body>
     <header>
-      <img src="./images/logo.svg" alt="" />
+      <img src="./images/logo.svg" alt="Base Apparel" />
     </header>
+
+    <main>
+      <picture class="hero">
+        <source media="(min-width: 1024px)" srcset="./images/hero-desktop.jpg" />
+
+        <img src="./images/hero-mobile.jpg" alt="" class="hero__image" />
+      </picture>
+
+      <section class="intro">
+        <h1 class="intro__title">We're coming soon</h1>
+
+        <p class="intro__description">
+          Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+
+        <form class="form" novalidate>
+          <div class="form__group">
+            <input
+              type="email"
+              class="form__email-input"
+              name="email"
+              placeholder="Email Address"
+              aria-label="Email Address"
+              aria-describedby="email-error"
+              aria-invalid="false"
+              required
+            />
+
+            <img src="./images/icon-error.svg" alt="" aria-hidden="true" />
+
+            <button type="submit" class="form__submit-btn" aria-label="Submit email">
+              <img src="./images/icon-arrow.svg" alt="" aria-hidden="true" />
+            </button>
+
+            <p id="email-error" class="" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+    </main>
 
     <script src="./script.js"></script>
   </body>
