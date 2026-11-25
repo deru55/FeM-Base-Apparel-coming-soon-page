@@ -31,12 +31,13 @@
           launch deals.
         </p>
 
-        <form class="form" novalidate>
-          <div class="form__group">
+        <form class="form" data-form novalidate>
+          <div class="form__field" data-field>
             <input
               type="email"
               class="form__email-input"
               name="email"
+              data-input
               placeholder="Email Address"
               aria-label="Email Address"
               aria-describedby="email-error"
@@ -50,7 +51,7 @@
               <img src="./images/icon-arrow.svg" alt="" aria-hidden="true" />
             </button>
 
-            <p id="email-error" class="" aria-live="polite"></p>
+            <p id="email-error" class="form__error-msg" data-error-msg aria-live="polite"></p>
           </div>
         </form>
       </section>
